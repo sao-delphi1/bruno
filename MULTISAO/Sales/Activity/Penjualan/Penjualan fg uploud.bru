@@ -1,0 +1,17 @@
+meta {
+  name: Penjualan fg uploud
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{API_URL}}/penjualan/upload-status
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "saleid": "SSI.26.06.018"
+  }
+}

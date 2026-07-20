@@ -1,0 +1,30 @@
+meta {
+  name: Rpt Tunggakan Piutang
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/rpttunggakanpiutang
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+   {
+     //"alldata" : 1,
+      "transdate" : "20241231",
+      "custidkeyword" : "",
+      "custnamekeyword" : "",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : "",
+      "fgtelat" : "T"
+       
+   }
+  
+  
+}

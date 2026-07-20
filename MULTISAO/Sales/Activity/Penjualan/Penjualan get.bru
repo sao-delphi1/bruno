@@ -1,0 +1,21 @@
+meta {
+  name: Penjualan get
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+       "dari" : "20260630",
+       "sampai" : "20260630",
+       "poidkeyword": "",
+       "custidkeyword": "",
+       "salesidkeyword": ""
+  }
+}

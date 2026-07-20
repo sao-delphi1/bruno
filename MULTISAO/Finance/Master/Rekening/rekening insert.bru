@@ -1,0 +1,28 @@
+meta {
+  name: rekening insert
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/rekening
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "rekeningname"  : "tes",
+    "grouprekid": "110100",
+    "tipe" : "1",
+    "note" : "tes note",
+    "fgactive" : "Y"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

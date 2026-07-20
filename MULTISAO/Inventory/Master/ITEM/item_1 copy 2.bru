@@ -1,0 +1,31 @@
+meta {
+  name: item_1 copy 2
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "itemname": "123213213",
+      "productid": "100",
+      "groupid": "100",
+      "uomid": "Gram",
+      "garantee": "0",
+      "currid": "IDR",
+      "userprice": ".0000",
+      "dealerprice": ".0000",
+      "jangkagarantee": "0",
+      "minimumstok": "0",
+      "ctk": "Y",
+      "komisi": "0",
+      "fgactive": "Y",
+      "note": null,
+      "partno": "123123"
+  }
+}

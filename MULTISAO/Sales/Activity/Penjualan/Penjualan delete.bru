@@ -1,0 +1,17 @@
+meta {
+  name: Penjualan delete
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "saleid" : "SSI.26.06.023"
+  }
+}

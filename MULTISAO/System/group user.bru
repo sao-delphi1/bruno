@@ -1,0 +1,15 @@
+meta {
+  name: group user
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{API_URL}}/security/group
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Otorisasi Klaim Bagasi
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/otorisasi/pengajuanbagasi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"transid" : "PKB/2023/0001",
+      "transidkeyword" : "",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : ""  
+  }
+}

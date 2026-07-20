@@ -1,0 +1,38 @@
+meta {
+  name: Txn KKBB_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      //"paymentid": "AR/TC-K/24/03/0001",
+      "fgtrans": "KM",
+      "transdate": "20260630",
+      "actor": "RICO",
+      "note": "TES",
+      "bankid": "",
+      "total": "200000.0000",
+      "detail": [
+          {
+              "note": "AP-SAS/23/01/0003",
+              "amount": "200000.0000",
+              "rekeningid": "100.01",
+              "jenis" : "K"
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

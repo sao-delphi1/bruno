@@ -1,0 +1,18 @@
+meta {
+  name: group POST
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/Satuan
+  body: json
+  auth: inherit
+}
+
+body:json {
+     {
+        "uomid": "pcs"
+  
+      }
+}

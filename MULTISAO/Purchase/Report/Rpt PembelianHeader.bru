@@ -1,0 +1,25 @@
+meta {
+  name: Rpt PembelianHeader
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rptbeli/summary
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dari" : "20240101",
+      "sampai" : "20241030",
+      "purchaseidkeyword" : "",
+      "suppidkeyword" : "",
+      "suppnamekeyword" : ""
+  }
+}

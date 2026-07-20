@@ -1,0 +1,27 @@
+meta {
+  name: Rpt Penjualan Header
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/rptpenjualanheader
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+   {
+       "dari" : "20240501",
+       "sampai" : "20240530",
+       "saleidkeyword" : "",
+       "custidkeyword" : "",
+       "custnamekeyword" : ""
+   }
+  
+  
+}

@@ -1,0 +1,29 @@
+meta {
+  name: update rekening
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/rekening
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "rekeningid" : "110100.0001",
+    "rekeningname"  : "tes",
+    "grouprekid": "110100",
+    "tipe" : "1",
+    "note" : "tes note",
+    "fgactive" : "Y"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

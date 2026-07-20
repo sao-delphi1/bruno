@@ -1,0 +1,26 @@
+meta {
+  name: Pengajuan Bagasi_3
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/pengajuanbagasi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      // "transid" : "PKB/2024/0103",
+      "dari" : "20240101",
+      "sampai" : "20241030",
+      "transidkeyword" : "",
+      "salesidkeyword" : "",
+      "salesnamekeyword" :""    
+  }
+}

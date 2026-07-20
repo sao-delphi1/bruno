@@ -1,0 +1,30 @@
+info:
+  name: user_2
+  type: http
+  seq: 11
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/user"
+  body:
+    type: json
+    data: |-
+      {
+          "userid": "Test",
+          "password": "123",
+          "kdgroup": "SALES",
+          "fgotobagasi": "T",
+          "fgotokomisi": "T",
+          "fgotorisasi": "0",
+          "salesid": "",
+          "fgoverdue": "T",
+          "fgjualrugi": "T",
+          "margin": 2
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

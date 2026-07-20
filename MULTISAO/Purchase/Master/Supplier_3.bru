@@ -1,0 +1,21 @@
+meta {
+  name: Supplier_3
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/supplier
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+          "suppid" : "CSS002"
+  }
+}

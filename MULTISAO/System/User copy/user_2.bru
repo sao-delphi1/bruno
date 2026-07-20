@@ -1,0 +1,26 @@
+meta {
+  name: user_2
+  type: http
+  seq: 11
+}
+
+patch {
+  url: {{API_URL}}/user
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "userid": "Test",
+      "password": "123",
+      "kdgroup": "SALES",
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

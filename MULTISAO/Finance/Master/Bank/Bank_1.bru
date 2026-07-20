@@ -1,0 +1,20 @@
+meta {
+  name: Bank_1
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/bank
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "bankid" : "tes",
+      "bankname" : "tes",
+      "note" : "",
+      "fgactive" : "Y"
+  }
+}

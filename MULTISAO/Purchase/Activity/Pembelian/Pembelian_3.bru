@@ -1,0 +1,35 @@
+meta {
+  name: Pembelian_3
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/pembelian
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "purchaseid": "Test2",
+     "transdate" : "20260630",
+     "nofps" : "292121",
+     "suppid" : "SP003",
+     "note" : "note",
+     "currid" : "IDR",
+     "nilaitax" : "11",
+     "fgtax" : "Y",
+     "jatuhtempo" : 30,
+     "detail" : [
+      {
+          "itemid" : "88.1002.018",
+          "qty" : 1,
+          "price" : 150000,
+          "disc" : 0
+      }
+  
+     ]
+      
+  }
+}

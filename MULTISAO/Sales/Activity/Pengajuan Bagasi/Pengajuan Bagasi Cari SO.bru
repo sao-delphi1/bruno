@@ -1,0 +1,25 @@
+meta {
+  name: Pengajuan Bagasi Cari SO
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/pengajuanbagasi/cari-so
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate" : "20241030",
+      "soidkeyword" : "",
+      "custidkeyword" : "",
+      "custnamekeyword" : "sinergi",
+      "salesid" : "D013"
+  }
+}

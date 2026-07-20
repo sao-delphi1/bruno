@@ -1,0 +1,24 @@
+meta {
+  name: Txn KKBB_3
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "voucherid": "BM/YUYU/26/03/0003"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

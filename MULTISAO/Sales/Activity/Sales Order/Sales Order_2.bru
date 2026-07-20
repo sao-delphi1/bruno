@@ -1,0 +1,51 @@
+meta {
+  name: Sales Order_2
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "soid": "SOM/202411/0009",
+      "custid": "CNP350",
+      "salesid": "D013",
+      "transdate": "20231130",
+      "tglkirim": "20231130",
+      "project": "beli kamera",
+      "leadid": "R003",
+      "note": "",
+      "pocust": "123",
+      "fob": "Jakarta",
+      "nilaitax": 11,
+      "fgtax": "Y",
+    "termin":30,
+      "detail": [
+          {
+              "itemid": "14.1013.002",
+              "urut": "1",
+              "itemname": "APC UPS B600LI 14\"",
+              "qty": 2,
+              "price": 100000,
+              "modal": 10000,
+              "bagasi": 100000,
+              "note": ""
+          },
+          {
+              "itemid": "14.1013.001",
+              "urut": "2",
+              "itemname": "APC UPS B600LI 14\"",
+              "qty": 3,
+              "price": 500000,
+              "modal": 100000,
+              "bagasi": 100000,
+              "note": ""
+          }
+      ]
+  }
+}

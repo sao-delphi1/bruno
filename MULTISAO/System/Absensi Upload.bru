@@ -1,0 +1,40 @@
+meta {
+  name: Absensi Upload
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{API_URL}}/absensi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  { 
+     "data" :[
+      { 
+          "salesid" : "",
+          "transdate" : "20241011",
+          "jammasuk" : "07:00",
+          "jamkeluar" : ""
+      },
+      {
+          "salesid" : "N003",
+          "transdate" : "20241012",
+          "jammasuk" : "07:00",
+          "jamkeluar" : ""
+      },
+      {
+          "salesid" : "N003",
+          "transdate" : "20241013",
+          "jammasuk" : "",
+          "jamkeluar" : "16:30"
+      }
+     ]
+  }
+}

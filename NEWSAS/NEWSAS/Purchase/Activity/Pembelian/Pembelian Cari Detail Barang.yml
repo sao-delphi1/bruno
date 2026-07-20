@@ -10,14 +10,12 @@ http:
     type: json
     data: |-
       {
-         "konsinyasiid" : "1Tech/GR/2409/0063",
-         "suppid" : "CSP009",
-         "itemnamekeyword" : "bel",
-         "itemidkeyword" : "55"
+         "konsinyasiid" : "1Tech/GR/2203/0016",
+      //    "suppid" : "SJ003",
+         "itemnamekeyword" : "",
+         "itemidkeyword" : ""
       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true

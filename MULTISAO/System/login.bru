@@ -1,0 +1,20 @@
+meta {
+  name: login
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/login
+  body: json
+  auth: none
+}
+
+body:json {
+   {
+       "userid" : "admin",
+       "password" : "1"
+   }
+  
+  
+}

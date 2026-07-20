@@ -17,10 +17,10 @@ config:
 request:
   auth:
     type: bearer
-    token: 5|CAJiEBsBLKqF3ugeDuKgXSs427eVA4XgjEvsUnun533e6f00
+    token: 11|HQKX6wF2nBBv3zfpyuRIPf0E9nOCdIZCq61fzPqk37a1d761
   variables:
     - name: API_URL
-      value: http://0.0.0.0:8000/api
+      value: http://172.17.201.201:8005/api
 bundled: false
 extensions:
   bruno:

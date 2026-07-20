@@ -1,0 +1,11 @@
+meta {
+  name: PRODUCT DELETE
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{API_URL}}/in/product/100
+  body: json
+  auth: inherit
+}

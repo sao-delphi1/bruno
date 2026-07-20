@@ -1,0 +1,25 @@
+meta {
+  name: Rpt Rekap Total Sales
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{API_URL}}/rptrekapsales
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+   {
+      "salesidkeyword" : "",
+      "salesnamekeyword" : "",
+      "tahun" : "2024"
+   }
+  
+  
+}

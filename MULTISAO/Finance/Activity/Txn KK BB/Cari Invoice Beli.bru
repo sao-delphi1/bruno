@@ -1,0 +1,26 @@
+meta {
+  name: Cari Invoice Beli
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/txnkkbb/cariinvoicebeli
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "suppid": "TUNAI",
+      "transdate": "20260325",
+      "saleidkeyword" : ""
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

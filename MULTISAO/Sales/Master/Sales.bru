@@ -1,0 +1,21 @@
+meta {
+  name: Sales
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/sales
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     //"salesid": "1TECH",
+     "salesidkeyword" : "",
+     "salesnamekeyword" : "",
+     "active" : "ya",
+     "sortby" : "salesid"
+  }
+}

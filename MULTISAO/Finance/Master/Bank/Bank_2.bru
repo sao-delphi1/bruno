@@ -1,0 +1,25 @@
+meta {
+  name: Bank_2
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/bank
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "bankid" : "tes",
+      "bankname" : "tes",
+      "bankid2" : "",
+      "note" : "",
+      "fgactive" : "Y"
+  }
+}

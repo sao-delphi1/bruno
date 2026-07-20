@@ -1,0 +1,25 @@
+meta {
+  name: Penawaran
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/penawaran
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      //"gbuid": "1Tech-QUOT/2301.0002",
+      //"oto": 1,
+      //"alldata" : "Y",
+      "dari": "20230101",
+      "sampai": "20230919",
+      "custid": "DP092-MAP",
+      "salesid": "",
+      "sortby": "new",
+      "keyword": "0080"
+  }
+}

@@ -1,0 +1,38 @@
+meta {
+  name: Rpt Penjualan SN
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/rptpenjualansn
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+   {
+       "dari" : "20240510",
+       "sampai" : "20240529",
+       "saleidkeyword" : "",
+       "custidkeyword" : "",
+       "custnamekeyword" : "",
+       "salesidkeyword" : "",
+       "salesnamekeyword" : "",
+       "itemidkeyword" : "",
+       "itemnamekeyword" : "",
+       "snidkeyword" : "",
+       "poidkeyword" : "",
+       "soidkeyword" : "",
+       "soidbelikeyword" : "",
+       "grnidkeyword" : "",
+       "purchaseidkeyword" : "",
+       "sortby" : "new"
+   }
+  
+  
+}

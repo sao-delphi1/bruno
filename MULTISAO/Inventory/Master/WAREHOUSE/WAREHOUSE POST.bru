@@ -1,0 +1,23 @@
+meta {
+  name: WAREHOUSE POST
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/warehouse
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+        "warehouseid": "01GUA",
+        "warehousename": "GUDANG UTAMA TEST",
+        "address": "",
+        "city": "",
+        "contactperson": "",
+        "phone": "",
+        "fax": ""
+  }
+}

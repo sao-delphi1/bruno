@@ -1,0 +1,26 @@
+meta {
+  name: Absen
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{API_URL}}/absen
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+   {
+       "userid" : "rico",
+       "keperluan" : "L",
+       "keterangan" : "coba",
+       "foto" : ""
+   }
+  
+  
+}

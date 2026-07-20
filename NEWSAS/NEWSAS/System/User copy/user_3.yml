@@ -1,0 +1,21 @@
+info:
+  name: user_3
+  type: http
+  seq: 11
+
+http:
+  method: DELETE
+  url: "{{API_URL}}/user"
+  body:
+    type: json
+    data: |-
+      {
+          "userid" : "test"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

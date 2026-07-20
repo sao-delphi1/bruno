@@ -1,0 +1,35 @@
+meta {
+  name: Penjualan update
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "saleid": "SSI.26.06.018",
+      "transdate": "20260630",
+      "custid": "DC001",
+      "nitku_code": "NITKU-123",
+      "salesid": "S001",
+      "poid": "0003/INV/2025/11",
+      "note": "Catatan untuk penjualan",
+      "term": 30,
+      "faktur_code": "11111111",
+      "tax_value": 11,
+      "detail": [
+          {
+              "itemid": "100.200.001",
+              "warehouseid": "01GU",
+              "qty": 60,
+              "price": 50000,
+              "note": "Catatan untuk item"
+          }
+      ]
+  }
+}

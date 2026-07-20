@@ -1,0 +1,24 @@
+meta {
+  name: Revisi_2
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/revisi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "id": "REV/2403.0001",
+      "note": "revisi so nomor XXX",
+      "alasan": "sudah ada PO",
+      "transdate": "20240326"
+  }
+}

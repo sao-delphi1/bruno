@@ -1,0 +1,34 @@
+meta {
+  name: security access
+  type: http
+  seq: 16
+}
+
+patch {
+  url: {{API_URL}}/security
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "kdgroup" : "finance",
+      "menu" : [
+      {
+      "kdmenu" : 1010200000   
+  },
+  {
+      "kdmenu" : 1010400000   
+  },
+  {
+      "kdmenu" : 1010500000   
+  }
+  
+  
+  ]
+  }
+}

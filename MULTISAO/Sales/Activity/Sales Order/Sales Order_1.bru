@@ -1,0 +1,41 @@
+meta {
+  name: Sales Order_1
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "custid": "DP135-MAP",
+      "salesid": "H005",
+      "transdate": "20241112",
+      "tglkirim": "20241112",
+      "project": "beli kamera",
+      "leadid": "R003",
+      "note": "",
+      "pocust": "123",
+      "fob": "Jakarta",
+      "nilaitax": 11,
+      "fgtax": "Y",
+      "potbagasi": ".7000",
+    "termin" : 30,
+      "detail": [
+          {
+              "itemid": "14.1013.002",
+              "urut": "1",
+              "itemname": "APC UPS B600LI 14\"",
+              "qty": 1,
+              "price": 50000,
+              "modal": 45000,
+              "bagasi": 0,
+              "note": ""
+          }
+      ]
+  }
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Get Report
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/purchase-order-atk-report
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "dari": "20260101",
+      "sampai": "20260704", 
+      "customer_name": "",
+      "supplier_id": "",
+      "poid": "002/INV/SKM0/AGP/VI/2026",
+      "page": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

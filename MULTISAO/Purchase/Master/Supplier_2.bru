@@ -1,0 +1,30 @@
+meta {
+  name: Supplier_2
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/supplier
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+          "suppid" : "CSS003",
+          "suppname": "SATU TECH",
+          "alamat": "palm mansion",
+          "kota": "jakarta",
+          "contact" : "eriyanto",
+          "telp": "021 55667788",
+          "fax": "021 55990011",
+          "email": "kemana@aja.com",
+          "termin": "30",
+          "note": ""
+  }
+}

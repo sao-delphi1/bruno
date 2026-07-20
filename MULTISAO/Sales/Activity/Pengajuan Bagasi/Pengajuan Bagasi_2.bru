@@ -1,0 +1,34 @@
+meta {
+  name: Pengajuan Bagasi_2
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/pengajuanbagasi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "transid" : "PKB/2024/0104",
+      "transdate" : "2024-10-30",
+      "salesid" : "D013",
+      "up" : "tes up222",
+      "namarekening" : "tes nama rek",
+      "norekening" : "tes no rek",
+      "bank" : "tes bank",
+      "cabang" : "tes cabang",
+      "detail" : [
+          {
+              "soid" : "PO001",
+              "amount" : 5000000
+          }
+      ]
+  }
+}

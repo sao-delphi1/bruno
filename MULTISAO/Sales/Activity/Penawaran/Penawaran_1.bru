@@ -1,0 +1,59 @@
+meta {
+  name: Penawaran_1
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/penawaran
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "gbuid": "1Tech-PNW/2402.0001",
+      "custid": "UP109",
+      "transdate": "20240201",
+      "custname": "PT.KORINDO GROUP",
+      "up" : "Pak Toni",
+      "salesid": "F006",
+      "telp": "12345678",
+      "fax": "87654321",
+      "email": "kalau@sempat.com",
+      "note": "keterangan",
+      "fgtax": "Y",
+      "nilaitax": 11,
+      "fob" : "SULAWESI",
+      "fgterm" : "X",
+      "fgjaminan" : "T",
+      "term" : 7,
+      "fgtampilbank" : "T",
+      "detail": [
+          {
+              "urut": "1",
+              "itemname": "APC UPS B600LI 14\"",
+              "qty": 1,
+              "price": 500000000,
+              "modal": 600000000,
+              "bagasi": 0,
+              "note": "",
+              "partno": "aaa"
+          },
+          {
+              "urut": "2",
+              "itemname": "APC UPS B600LI 14\"",
+              "qty": 1,
+              "price": 500000000,
+              "modal": 600000000,
+              "bagasi": 0,
+              "note": "",
+              "partno": "aaa"
+          }
+      ]
+  }
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Rpt Rekap Penjualan
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rptrekappenjualan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dari" : "20240101",
+      "sampai" : "20240102",
+      "custidkeyword" : "",
+      "custnamekeyword" : "",
+      "salesidkeyword" : "asasas",
+      "salesnamekeyword" : ""
+  }
+}

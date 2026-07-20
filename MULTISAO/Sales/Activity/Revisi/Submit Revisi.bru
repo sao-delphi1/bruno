@@ -1,0 +1,21 @@
+meta {
+  name: Submit Revisi
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/revisi/submit
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "id": "REV/2024/0002"
+  }
+}

@@ -1,0 +1,72 @@
+meta {
+  name: logout
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/logout
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "grand_total_awal_debet" : 645000000.0000,
+    "grand_total_awal_kredit" : 645000000.0000,
+    "grand_total_mutasi_debet" : 80000000.0000,
+    "grand_total_mutasi_kredit" : 83000000.0000,
+    "grand_total_akhir_debet" : 687000000.0000,
+    "grand_total_akhir_kredit" : 687000000.0000,
+    "data" : [
+      {
+        "group_rek_id" : "MISAL.01",
+        "group_rek_name" : "ASET",
+        "saldo_awal_debet" : 50000000.0000,
+        "saldo_awal_kredit" : 0.0000,
+        "mutasi_debet" : 25000000.0000,
+        "mutasi_kredit" : 15000000.0000,
+        "saldo_akhir_debet" : 60000000.0000,
+        "saldo_akhir_kredit" : 0.0000,
+        "detail" : [
+          {
+            "sub_group_id" : "CONTOH.01",
+            "sub_group_name" : "Aset Lancar",
+            "saldo_awal_debet" : 50000000.0000,
+            "saldo_awal_kredit" : 0.0000,
+            "mutasi_debet" : 25000000.0000,
+            "mutasi_kredit" : 15000000.0000,
+            "saldo_akhir_debet" : 60000000.0000,
+            "saldo_akhir_kredit" : 0.0000,
+            "data_detail" : [
+              {
+                "rekening_id" : "1101",
+                "rekening_name" : "Kas Bank BCA",
+                "saldo_awal_debet" : 50000000.0000,
+                "saldo_awal_kredit" : 0.0000,
+                "mutasi_debet" : 25000000.0000,
+                "mutasi_kredit" : 15000000.0000,
+                "saldo_akhir_debet" : 60000000.0000,
+                "saldo_akhir_kredit" : 0.0000
+              },
+              {
+                "rekening_id" : "1102",
+                "rekening_name" : "Kas Bank Mandiri",
+                "saldo_awal_debet" : 50000000.0000,
+                "saldo_awal_kredit" : 0.0000,
+                "mutasi_debet" : 25000000.0000,
+                "mutasi_kredit" : 15000000.0000,
+                "saldo_akhir_debet" : 60000000.0000,
+                "saldo_akhir_kredit" : 0.0000
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

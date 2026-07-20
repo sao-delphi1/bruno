@@ -1,0 +1,36 @@
+meta {
+  name: setting_1
+  type: http
+  seq: 24
+}
+
+patch {
+  url: {{API_URL}}/setting
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+          "gd_beli": "01GU",
+          "gd_jual": "01GU",
+          "gd_transfer": "01GU",
+          "gd_retur": "01GU",
+          "gd_pgretur": "01GU",
+          "gd_konsinyasi": "01GU",
+          "gd_service": "01GU",
+          "gd_counter": "01GU",
+          "potongan": ".9000",
+          "rekpj": "120100.0001",
+          "rekpb": "210100.0001",
+          "rekgp": "200",
+          "rekbi": "600",
+          "rekpem": "100",
+          "rekpll": "400",
+          "fgkeuangan": "100"
+      }
+}

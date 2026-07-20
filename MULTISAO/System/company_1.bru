@@ -1,0 +1,27 @@
+meta {
+  name: company_1
+  type: http
+  seq: 22
+}
+
+patch {
+  url: {{API_URL}}/company
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+   {
+       "companyname" : "Satu Tech",
+       "alamat": "JL KARTINI RAYA NO.16\r\nKARTINI SAWAH BESAR\r\nKOTA ADM JAKARTA PUSAT",
+       "phone" : "",
+       "fax" : "",
+       "email" : ""
+   }
+  
+  
+}

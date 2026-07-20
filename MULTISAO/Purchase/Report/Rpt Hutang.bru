@@ -1,0 +1,24 @@
+meta {
+  name: Rpt Hutang
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rpthutang
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+   {
+       "transdate" : "20230101",
+       "page" : "10"
+   }
+  
+  
+}

@@ -1,0 +1,17 @@
+meta {
+  name: Penjualan by id
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+       "saleid" : "SSI.26.06.018"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: group user_1
+  type: http
+  seq: 19
+}
+
+post {
+  url: {{API_URL}}/security/group
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "kdgroup" : "p"
+  }
+}

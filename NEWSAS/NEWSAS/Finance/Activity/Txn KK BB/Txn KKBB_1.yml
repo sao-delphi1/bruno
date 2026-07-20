@@ -11,11 +11,11 @@ http:
     data: |-
       {
           //"paymentid": "AR/TC-K/24/03/0001",
-          "fgtrans": "BM",
-          "transdate": "20260310",
+          "fgtrans": "KM",
+          "transdate": "20260525",
           "actor": "RICO",
           "note": "TES",
-          "bankid": "YUYU",
+          "bankid": "",
           "total": "200000.0000",
           "detail": [
               {

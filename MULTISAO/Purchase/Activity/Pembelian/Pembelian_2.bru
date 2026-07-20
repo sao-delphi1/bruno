@@ -1,0 +1,21 @@
+meta {
+  name: Pembelian_2
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{API_URL}}/pembelian
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "purchaseid" : "ZJ24I01185"
+  }
+}

@@ -1,0 +1,11 @@
+meta {
+  name: group delete
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{API_URL}}/in/group/10
+  body: json
+  auth: inherit
+}

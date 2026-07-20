@@ -1,0 +1,24 @@
+meta {
+  name: Absensi Summary
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{API_URL}}/absensi/summary-absensi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dari" : "20240401",
+      "sampai" : "20240430",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : "ilham"
+  }
+}

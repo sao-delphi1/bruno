@@ -1,0 +1,20 @@
+meta {
+  name: UOM GET
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/satuan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+  
+    "uomid": "Ampere",
+    "uomidkeyword": ""
+  
+  }
+}

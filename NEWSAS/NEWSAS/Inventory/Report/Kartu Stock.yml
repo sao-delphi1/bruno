@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "dari" : "20260101",
+        "dari" : "20250101",
         "sampai" : "20260422",
         "itemid" : "55.999.036"
       }

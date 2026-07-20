@@ -10,10 +10,10 @@ http:
     type: json
     data: |-
       {
-        "dari" : "20260101",
+        "dari" : "20210101",
         "sampai" : "20260422",
         "itemidkeyword" : "",
-        "itemnamekeyword" : "lenovo"
+        "itemnamekeyword" : ""
       }
   auth: inherit
 

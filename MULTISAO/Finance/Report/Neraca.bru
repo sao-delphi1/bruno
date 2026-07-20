@@ -1,0 +1,24 @@
+meta {
+  name: Neraca
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/rptneraca
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "periode" : 20250101
+  }   
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

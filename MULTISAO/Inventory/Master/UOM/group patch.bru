@@ -1,0 +1,20 @@
+meta {
+  name: group patch
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/satuan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    
+      "uomid": "PCS",
+      "kodesatuan": "10"
+      
+  }
+}

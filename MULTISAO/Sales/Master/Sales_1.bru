@@ -1,0 +1,27 @@
+meta {
+  name: Sales_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/sales
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "salesname" : "salesname",
+     "address" : "address",
+     "telp" : "telp",
+     "hp" : "hp",
+     "email" : "email",
+     "note" : "note",
+     "ktp" : "note",
+     "npwp" : "note",
+     "jabatan" : "jabatan",
+     "fgactive" : 1,
+     "tglgabung" : "20260610"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Sales Order_3
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid": "SO/202311/0001"
+  }
+}

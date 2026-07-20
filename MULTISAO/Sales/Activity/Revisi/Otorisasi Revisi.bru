@@ -1,0 +1,22 @@
+meta {
+  name: Otorisasi Revisi
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/revisi/oto
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "id": "REV/2024/0002",
+      "fgoto" : "Y"
+  }
+}

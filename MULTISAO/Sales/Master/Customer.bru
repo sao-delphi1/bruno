@@ -1,0 +1,20 @@
+meta {
+  name: Customer
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/customer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "custid": "DA001",
+     "custidkeyword": "",
+      "custnamekeyowrd": "",
+      "sortby": "custname"
+  }
+}

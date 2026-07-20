@@ -1,0 +1,27 @@
+meta {
+  name: Customer_1
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{API_URL}}/customer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+          "custname": "SATU TECH",
+          "alamat": "palm mansion",
+          "kota": "jakarta",
+          "telp": "021 55667788",
+          "fax": "021 55990011",
+          "email": "kemana@aja.com",
+          "salesid": "R003",
+          "limitpiutang": "500000000",
+          "termin": "30",
+          "note": "",
+          "noteint": "tes"
+  }
+}

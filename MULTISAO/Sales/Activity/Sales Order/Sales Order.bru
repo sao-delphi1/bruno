@@ -1,0 +1,26 @@
+meta {
+  name: Sales Order
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     // "soid": "SO/202411/0001",
+      "oto": 1,
+      //"alldata" : "Y",
+      "dari": "20230101",
+      "sampai": "20250321",
+      "custid": "",
+      "salesid": "",
+      "sortby": "old"
+     // "keyword": "0080"
+      
+  }
+}

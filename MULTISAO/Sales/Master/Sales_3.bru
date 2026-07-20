@@ -1,0 +1,17 @@
+meta {
+  name: Sales_3
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/sales
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "salesid" : "S003"
+  }
+}

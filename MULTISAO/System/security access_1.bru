@@ -1,0 +1,21 @@
+meta {
+  name: security access_1
+  type: http
+  seq: 17
+}
+
+get {
+  url: {{API_URL}}/security
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "kdgroup" : "owner"
+  }
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Cari Invoice Jual
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/txnkkbb/cariinvoicejual
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "custid": "UE032",
+      "saleidkeyword" : ""
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

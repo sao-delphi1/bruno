@@ -1,0 +1,25 @@
+meta {
+  name: Lap Absen
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/laporanabsen
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+   {
+       "userid" : "rico",
+       "dari" : "20230101",
+       "sampai" : "20231031"
+   }
+  
+  
+}

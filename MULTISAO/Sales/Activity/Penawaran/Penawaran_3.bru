@@ -1,0 +1,21 @@
+meta {
+  name: Penawaran_3
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{API_URL}}/penawaran
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "gbuid": "1Tech-PNW/2402.0001"
+  }
+}

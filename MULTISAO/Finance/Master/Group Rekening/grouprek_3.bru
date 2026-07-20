@@ -1,0 +1,27 @@
+meta {
+  name: grouprek_3
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/grouprek
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      //"grouprekid" : "1.003",
+    "grouprekidkeyword" : "",
+    "groupreknamekeyword" : "",
+    "sortby" : "id"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

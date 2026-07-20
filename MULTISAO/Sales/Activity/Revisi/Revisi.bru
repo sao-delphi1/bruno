@@ -1,0 +1,31 @@
+meta {
+  name: Revisi
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/revisi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"id": "REV/2024/0001",
+      //"oto": 1,
+      //"alldata" : "Y",
+      "dari": "20230101",
+      "sampai": "20240326",
+      "keyword" : "",
+      "notekeyword" : "",
+      "alasankeyword" : "",
+      "userkeyword" : "",
+      "jenis" : "all",
+      "sortby" : "dateold"
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: Customer_3
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{API_URL}}/customer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+          "custid": "CNS001"
+  }
+}
