@@ -1,0 +1,18 @@
+meta {
+  name: Rpt Produksi Penerimaan Finish Goods By Job Order
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{API_URL}}/rptproduksipfgbyjo
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20260101",
+    "sampai" : "20260717"
+  }
+}
