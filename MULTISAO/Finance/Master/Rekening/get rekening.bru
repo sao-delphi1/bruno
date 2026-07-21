@@ -1,19 +1,23 @@
 meta {
-  name: delete rekening
+  name: get rekening
   type: http
-  seq: 5
+  seq: 1
 }
 
-delete {
+get {
   url: {{API_URL}}/rekening
   body: json
   auth: inherit
 }
 
 body:json {
-  {
-      "rekeningid" : "110100.0001"
-  }
+  
+    {
+      "rekeningidkeyword" : "",
+      "rekeningnamekeyword" : "",
+      "fgactive" : "Y"
+    }
+  
 }
 
 settings {

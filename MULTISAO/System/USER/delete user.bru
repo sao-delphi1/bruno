@@ -1,18 +1,18 @@
 meta {
-  name: delete rekening
+  name: delete user
   type: http
-  seq: 5
+  seq: 4
 }
 
 delete {
-  url: {{API_URL}}/rekening
+  url: {{API_URL}}/user
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      "rekeningid" : "110100.0001"
+      "userid" : "Test"
   }
 }
 

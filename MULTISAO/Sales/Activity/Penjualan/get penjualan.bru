@@ -1,0 +1,23 @@
+meta {
+  name: get penjualan
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "company_id" : 1,
+    "dari" : "20010630",
+    "sampai" : "20261230",
+    "taxidkeyword" : "",
+    "saleidkeyword": "",
+    "custidkeyword": "",
+    "custnamekeyword": ""
+  }
+}

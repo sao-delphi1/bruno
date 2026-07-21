@@ -1,0 +1,24 @@
+meta {
+  name: get pembelian
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/pembelian
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "company_id" : 1,
+      "purchaseidkeyword" : "",
+      "invoiceidkeyword" : "",
+      "fpsidkeyword" : "",
+      "suppidkeyword" : "",
+      "suppnamekeyword" : "",
+      "dari": "20260630",
+      "sampai": "20261231"    
+  }
+}

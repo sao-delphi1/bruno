@@ -1,0 +1,18 @@
+meta {
+  name: get penjualan by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/penjualan-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "company_id": "1",
+    "saleid": "SSI.26.06.016"
+  }
+}

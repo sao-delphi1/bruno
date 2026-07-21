@@ -1,0 +1,26 @@
+meta {
+  name: update item
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "itemid" : "1.100.00001",
+    "itemname": "123213213",
+    "groupid": "100",
+    "uomid": "Gram",
+    "ctk": "Y",
+    "fgactive": "Y",
+    "note": null,
+    "fgbarang" : "A",
+    "kodejenisbarang" : "000000",
+    "company_id" : "1"
+  }
+}

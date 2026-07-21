@@ -1,0 +1,17 @@
+meta {
+  name: create group user
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/security/group
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "kdgroup" : "p"
+  }
+}

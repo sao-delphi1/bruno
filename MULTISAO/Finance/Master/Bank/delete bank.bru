@@ -1,0 +1,18 @@
+meta {
+  name: delete bank
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/bank
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "bankid" : "tes",
+      "company_id" : 1
+  }
+}

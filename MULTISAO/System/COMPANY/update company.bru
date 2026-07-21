@@ -1,0 +1,35 @@
+meta {
+  name: update company
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/company
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id" : 1,
+    "company_code" : "S4P",
+    "company_name" : "SENTRA AGUNG PERSADA",
+    "company_address" : "",
+    "acc_name" : "",
+    "acc_number" : "",
+    "acc_bank" : "",
+    "acc_branch" : "",
+    "director_name" : "",
+    "refund_amount" : "",
+    "fg_cetakan" : "",
+    "company_logo" : "",
+    "sign_logo_only" : "",
+    "sign_with_logo" : "",
+    "sign_only" : "",
+    "npwp" : "",
+    "nitku_code" : "",
+    "phone" : "",
+    "fgactive" : ""
+  }
+}

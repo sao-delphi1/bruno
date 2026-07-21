@@ -1,0 +1,34 @@
+meta {
+  name: create company
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/company
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "company_code" : "S4P",
+    "company_name" : "SENTRA AGUNG PERSADA",
+    "company_address" : "",
+    "acc_name" : "",
+    "acc_number" : "",
+    "acc_bank" : "",
+    "acc_branch" : "",
+    "director_name" : "",
+    "refund_amount" : "",
+    "fg_cetakan" : "",
+    "company_logo" : "",
+    "sign_logo_only" : "",
+    "sign_with_logo" : "",
+    "sign_only" : "",
+    "npwp" : "",
+    "nitku_code" : "",
+    "phone" : "",
+    "fgactive" : "Y"
+  }
+}

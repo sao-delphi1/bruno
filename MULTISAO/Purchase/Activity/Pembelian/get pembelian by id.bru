@@ -1,0 +1,18 @@
+meta {
+  name: get pembelian by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/pembelian-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "company_id" : 1,
+      "purchaseid": "1-202606-001"
+  }
+}

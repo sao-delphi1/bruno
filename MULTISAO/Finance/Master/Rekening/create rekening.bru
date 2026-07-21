@@ -1,10 +1,10 @@
 meta {
-  name: update rekening
+  name: create rekening
   type: http
-  seq: 4
+  seq: 3
 }
 
-patch {
+post {
   url: {{API_URL}}/rekening
   body: json
   auth: inherit
@@ -15,8 +15,8 @@ body:json {
     "rekeningid" : "1",
     "rekeningname"  : "tes",
     "grouprekid": "110100",
-    "fgtipe" : "",
     "tipe" : "1",
+    "fgtipe" : "",
     "note" : "tes note",
     "fgactive" : "Y"
   }

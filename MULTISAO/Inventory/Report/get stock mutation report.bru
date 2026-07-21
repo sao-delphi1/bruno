@@ -1,0 +1,28 @@
+meta {
+  name: get stock mutation report
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/stock-mutation-report
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20010101",
+    "sampai" : "20261231",
+    "itemid" : "101.999.007",
+    "company_id" : 1,
+    "warehouseid" : "01GU"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

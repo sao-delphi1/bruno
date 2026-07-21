@@ -1,0 +1,26 @@
+meta {
+  name: get rekap piutang report
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/outstanding-sales-report
+  body: json
+  auth: inherit
+}
+
+body:json {
+   {
+     "company_id" : 1,
+     "dari" : "11111111",
+     "sampai" : "20260330",
+     "custidkeyword" : "",
+     "custnamekeyword" : "",
+     "saleidkeyword" : "",
+     "taxidkeyword" : "",
+     "fglunas" : "Y"
+   }
+  
+  
+}

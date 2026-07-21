@@ -1,0 +1,18 @@
+meta {
+  name: delete pembelian
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/pembelian
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "company_id" : 1,
+      "purchaseid": "1-202606-001"
+  }
+}

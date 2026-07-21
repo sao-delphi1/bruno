@@ -1,0 +1,17 @@
+meta {
+  name: get setting
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/setting
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "company_id" : 1
+  }
+}

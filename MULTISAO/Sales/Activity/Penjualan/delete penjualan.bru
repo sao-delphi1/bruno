@@ -1,0 +1,18 @@
+meta {
+  name: delete penjualan
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "company_id": "1",
+    "saleid": "SSI.26.06.016"
+  }
+}

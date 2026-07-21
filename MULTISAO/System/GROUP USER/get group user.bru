@@ -1,0 +1,11 @@
+meta {
+  name: get group user
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/security/group
+  body: json
+  auth: inherit
+}

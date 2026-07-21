@@ -1,0 +1,18 @@
+meta {
+  name: get customer
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/customer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "custidkeyword": "",
+     "custnamekeyowrd": ""
+  }
+}

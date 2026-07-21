@@ -1,0 +1,23 @@
+meta {
+  name: get data for xml coretax
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/coretax-get-data-for-xml
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20240201",
+    "sampai" : "20261231",
+    "saleidkeyword" : "",
+    "custnamekeyword" : "",
+    "fgupload" : "T",
+    "company_id" : 1,
+    "saleid": ["AGP1-202607-001"]
+  }
+}

@@ -1,0 +1,44 @@
+meta {
+  name: update pembelian
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/pembelian
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "purchaseid": "1-202606-001",
+     "company_id" : 1,
+     "invoiceid": "Test4",
+     "fpsid" : "asdd", 
+     "transdate" : "20260630",
+     "suppid" : "SP003",
+     "note" : "note",
+     "nilaitax" : "11",
+     "rek_hutangdagang": "600",
+     "rek_ppnmasukan": "100",
+     "rek_pembelian": "400",
+     "warehouseid" : "01GU",
+     "detail" : [
+        {
+            "itemid" : "101.999.007",
+            "itemname" : "bala",
+            "note" : "bala",
+            "qty" : 2,
+            "price" : 150000
+        },
+       {
+            "itemid" : "101.999.008",
+            "itemname" : "bala",
+            "note" : "bala",
+            "qty" : 2,
+            "price" : 150000
+        }
+     ] 
+  }
+}

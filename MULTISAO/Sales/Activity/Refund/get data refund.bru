@@ -1,0 +1,31 @@
+meta {
+  name: get data refund
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/refund
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    /* 
+      status_refund = T,W,Y 
+    */
+    "status_refund" : "Y",
+    "refund_date" : "20260720",
+    "details" : [
+      {
+        "saleid": "SSI.25.05.053",
+        "company_id" : 1
+      },
+      {
+        "saleid": "SSI.25.07.014",
+        "company_id": "2"
+      }
+    ]
+  }
+}

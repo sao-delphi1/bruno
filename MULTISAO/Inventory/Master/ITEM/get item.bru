@@ -1,0 +1,21 @@
+meta {
+  name: get item
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+  
+    "itemidkeyword" : "",
+    "itemnamekeyword" : "",
+    "fgactive" : "Y",
+    "company_id" : "1"
+  }
+}

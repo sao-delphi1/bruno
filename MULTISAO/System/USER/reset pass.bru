@@ -1,18 +1,19 @@
 meta {
-  name: delete rekening
+  name: reset pass
   type: http
-  seq: 5
+  seq: 1
 }
 
-delete {
-  url: {{API_URL}}/rekening
+patch {
+  url: {{API_URL}}/resetpass
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      "rekeningid" : "110100.0001"
+      "userid" : "Test",
+      "password" : "123"
   }
 }
 

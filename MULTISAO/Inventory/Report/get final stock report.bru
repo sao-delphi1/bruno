@@ -1,0 +1,30 @@
+meta {
+  name: get final stock report
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/final-stock-report
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20210101",
+    "sampai" : "20261231",
+    "itemidkeyword" : "",
+    "itemnamekeyword" : "",
+    "warehouseidkeyword" : "",
+    "warehousenamekeyword" : "",
+    "company_id" : 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

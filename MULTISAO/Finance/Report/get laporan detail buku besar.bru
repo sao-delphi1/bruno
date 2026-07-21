@@ -1,0 +1,27 @@
+meta {
+  name: get laporan detail buku besar
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/get-general-ledger-report-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "company_id" : 1,
+    "dari" : 20250101,
+    "sampai" : 20261231,
+    "rekeningid": "100.01"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

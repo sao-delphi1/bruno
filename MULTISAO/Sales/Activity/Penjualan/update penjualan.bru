@@ -1,0 +1,36 @@
+meta {
+  name: update penjualan
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "company_id" : 1,
+    "saleid": "AGP1-202607-001",
+    "taxid" : "aaa",
+    "transdate": "20260717",
+    "custid": "DC001",
+    "note": "Catatan untuk penjualan",
+    "nilaitax" : 11,
+    "warehouseid": "01GU",
+    "rek_ppnkeluaran" : "a",
+    "rek_penjualan" : "a",
+    "rek_piutangdagang" : "a",
+    "detail": [
+        {
+          "itemid": "100.200.001",
+          "itemname" : "asasas",
+          "qty": 50,
+          "price": 50000,
+          "note": "Catatan untuk item"
+        }
+    ]
+  }
+}

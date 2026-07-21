@@ -1,0 +1,19 @@
+meta {
+  name: get warehouse
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/warehouse
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "company_id" : "1",
+    "warehouseidkeyword" : "",
+    "warehousenamekeyword" : ""
+  }
+}

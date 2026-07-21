@@ -1,0 +1,32 @@
+meta {
+  name: update setting
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/setting
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "company_id" : 1,
+      "gudang_pembelian": "01GU",
+      "gudang_penjualan": "01GU",
+  
+      "rek_piutangdagang": "120100.0001",
+      "rek_ppnkeluaran": "210100.0001",
+      "rek_penjualan": "200",
+  
+      "rek_hutangdagang": "600",
+      "rek_ppnmasukkan": "100",
+      "rek_pembelian": "400",
+  
+      "rek_lababerjalan": "100",
+      "grup_laba" : "A",
+      
+      "refund" : 90
+  }
+}

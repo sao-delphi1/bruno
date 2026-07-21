@@ -1,0 +1,18 @@
+meta {
+  name: get supplier
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/supplier
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "suppidkeyword": "",
+      "suppnamekeyowrd": ""
+  }
+}

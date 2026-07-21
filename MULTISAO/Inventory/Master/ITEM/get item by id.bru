@@ -1,0 +1,19 @@
+meta {
+  name: get item by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/item-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+  
+    "itemid" : "SY001-013",
+    "company_id" : "1"
+  }
+}

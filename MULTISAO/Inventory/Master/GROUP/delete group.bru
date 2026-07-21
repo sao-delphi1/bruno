@@ -1,0 +1,18 @@
+meta {
+  name: delete group
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/group-item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "groupid" : "10",
+    "company_id" : "1"
+  }
+}

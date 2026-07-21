@@ -1,0 +1,17 @@
+meta {
+  name: delete company
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/company
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id" : 1
+  }
+}

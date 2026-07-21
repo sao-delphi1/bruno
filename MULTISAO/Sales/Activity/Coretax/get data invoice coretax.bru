@@ -1,0 +1,22 @@
+meta {
+  name: get data invoice coretax
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/coretax-get-data-invoice
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20240201",
+    "sampai" : "20261231",
+    "saleidkeyword" : "",
+    "custnamekeyword" : "",
+    "fgupload" : "T",
+    "company_id" : 1
+  }
+}

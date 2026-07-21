@@ -1,0 +1,26 @@
+meta {
+  name: update data refund
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/refund
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20240101",
+    "sampai" : "20261231",
+    /* 
+      status_refund = T,W,Y 
+    */
+    "status_refund" : "W",
+    "saleidkeyword" : "",
+    "custidkeyword" : "",
+    "custnamekeyword" : "",
+    "company_id" : 2
+  }
+}

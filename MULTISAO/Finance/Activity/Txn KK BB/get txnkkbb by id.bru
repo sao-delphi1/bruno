@@ -1,18 +1,19 @@
 meta {
-  name: delete rekening
+  name: get txnkkbb by id
   type: http
-  seq: 5
+  seq: 2
 }
 
-delete {
-  url: {{API_URL}}/rekening
+get {
+  url: {{API_URL}}/txnkkbb-by-id
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      "rekeningid" : "110100.0001"
+    "company_id": "1",
+    "voucherid": "APB/26/05-0002"
   }
 }
 

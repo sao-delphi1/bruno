@@ -1,0 +1,19 @@
+meta {
+  name: get group
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/group-item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "company_id" : "1",
+    "groupidkeyword" : "",
+    "groupdesckeyword" : ""
+  }
+}

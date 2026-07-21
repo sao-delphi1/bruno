@@ -1,0 +1,18 @@
+meta {
+  name: delete item
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "itemid" : "1.100.00001",
+    "company_id" : "1"
+  }
+}

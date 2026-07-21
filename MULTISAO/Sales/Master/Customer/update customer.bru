@@ -1,0 +1,29 @@
+meta {
+  name: update customer
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/customer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "custid": "CNS001",
+    "custname": "SATU TECH",
+    "alamat": "palm mansion",
+    "kota": "jakarta",
+    "telp": "021 55667788",
+    "fax": "021 55990011",
+    "email": "kemana@aja.com",
+    "limitpiutang": "500000000",
+    "note": "",
+    "kodefp" : "04",
+    "kodenitku" : "000000",
+    "npwp" : "1312312312312",
+    "refund" : 90
+  }
+}

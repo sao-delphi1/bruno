@@ -1,0 +1,17 @@
+meta {
+  name: get supplier by id
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/supplier-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "suppid": "SA002"
+  }
+}

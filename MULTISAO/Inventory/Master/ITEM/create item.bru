@@ -1,0 +1,25 @@
+meta {
+  name: create item
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "itemname": "123213213",
+    "groupid": "100",
+    "uomid": "Gram",
+    "ctk": "Y",
+    "fgactive": "Y",
+    "note": null,
+    "fgbarang" : "A",
+    "kodejenisbarang" : "000000",
+    "company_id" : "1"
+  }
+}

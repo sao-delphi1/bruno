@@ -1,18 +1,19 @@
 meta {
-  name: delete rekening
+  name: get grouprek
   type: http
-  seq: 5
+  seq: 1
 }
 
-delete {
-  url: {{API_URL}}/rekening
+get {
+  url: {{API_URL}}/group-rek
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      "rekeningid" : "110100.0001"
+    "grouprekidkeyword" : "",
+    "groupreknamekeyword" : ""
   }
 }
 
