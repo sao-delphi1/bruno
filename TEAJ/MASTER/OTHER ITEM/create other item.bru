@@ -1,0 +1,17 @@
+meta {
+  name: create other item
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/other
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "other_name" : "RUSAK"
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: update other item
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/other
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "other_id" : "O001",
+    "other_name" : "RUSAK"
+  }
+}

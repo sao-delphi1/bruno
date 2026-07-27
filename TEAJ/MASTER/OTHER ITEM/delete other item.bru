@@ -1,0 +1,17 @@
+meta {
+  name: delete other item
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/other
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "other_id" : "O001"
+  }
+}
